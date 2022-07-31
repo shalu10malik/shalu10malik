@@ -1,0 +1,131 @@
+<html>
+<head>
+<script>
+
+
+    let userId=["ishikamk27","ishika33kk","chopra_bhav","suhani_rai3939"];
+    let userpass=["ishika1234","ishika5678","bhav1234","suhani5678"];
+    function logIn()
+    {
+       for(let i=0;i<userId.length;i+1)
+       if(userId[i]==Id)&&(userpass[i]==Password)
+       f=1
+       break
+       if(f==0)
+
+    {
+
+        alert("invalid")
+    }
+       
+     else
+     {
+
+
+    alert("not invalid")
+     }
+
+
+    }
+ function signUp()
+ {
+    let Id = document.getElementById("t1").value;
+    let Password = document.getElementById("t2").value;
+    userId.push(Id);
+    userpass.push(Password);
+
+     console.log(userId);
+     console.log(userpass)
+    
+}
+</script>
+<style>
+body
+    {
+       background-image: url(".\\JAVASCRIPT\\bg2.jpg");
+       background-size: 100%;
+
+    }
+
+.main
+{
+display:flex;
+
+
+
+}
+.div1
+{
+    
+   background-color: azure;
+   border-radius: 5px;
+   border: 2px black ridge;
+   height: 500px;
+   width: 400px;
+   margin-left: 100px;
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+.div2
+{
+    
+   background-color: azure;
+   border-radius: 5px;
+   border: 2px black ridge;
+   height: 500px;
+   width: 400px;
+   margin-left: 200px;
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+
+
+
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <div class="main">
+<div class="div1">
+<h2>SIGN UP FORM</h2><br>
+<P>User Id or Email</P><input type="text" id="t1">
+<p>Password</p><input type="text" id="t2">
+<p>Phone Number</p><input type="text">
+<p>First Name <input type="text"> </p><p> Last Name <input type="text"></p>
+<p>Already a member? <U>Log in</U> directly</p>
+<button>SIGN UP</button>
+</div>
+<div class="div2">
+<h2>LOG IN FORM</h2><br> <br>
+<p>User Id or Email</p><input type="text"><br><br>
+<p>Password</p><input type="text"><br><br>
+<p>Not a member? <u>Sign Up!</u>First</p><br><br>
+<button>LOG IN</button>
+
+</div>     
+</div>
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
