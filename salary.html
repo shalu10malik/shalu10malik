@@ -1,0 +1,239 @@
+<html>
+<head>
+<script>
+let name
+let id
+let sal
+let  leaves
+function calSal()
+{
+sal= document.getElementById("t3").value;
+document.getElementById("t5").value=sal;
+name= document.getElementById("t1").value;
+document.getElementById("t10").value=name;
+id= document.getElementById("t2").value;
+document.getElementById("t11").value=id;
+leaves= document.getElementById("t4").value;
+document.getElementById("t14").value=leaves;
+
+
+
+let HRA= sal*5/100;
+document.getElementById("t6").value=HRA;
+let CCA= sal*10/100
+document.getElementById("t7").value=CCA;
+let DA= sal*12/100
+document.getElementById("t8").value=DA;
+let PF= sal*15/100
+document.getElementById("t9").value=PF;
+let tsal= HRA+CCA+DA+PF+sal
+document.getElementById("t12").value=tsal;
+let fund=  sal*20/100
+let amount= sal/30*leaves
+document.getElementById("t15").value=amount;
+let netsal= tsal-fund-amount
+document.getElementById("t13").value=netsal;
+
+
+
+}
+
+</script>
+<style>
+.main
+{
+
+    display: flex;
+
+
+
+}
+.div1
+{
+
+    background-color: aliceblue;
+    border: 1px black ridge;
+    height: 700px;
+    width: 500px;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 150px ;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.div2
+{
+background-color: #3366ff;
+    border: 1px black ridge;
+    height: 700px;
+    width: 500px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    margin-right: 150px;
+    color: azure;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#t1
+
+{
+
+border: 2px blue ridge;
+width: 300px ;
+margin-left: 30px;
+height: 30px;
+border-radius: 10px;
+
+
+
+}
+#t2
+
+{
+
+border: 2px blue ridge;
+width: 300px ;
+margin-left: 30px;
+height: 30px;
+border-radius: 10px;
+
+
+
+}
+#t3
+
+{
+
+border: 2px blue ridge;
+width: 300px ;
+margin-left: 30px;
+height: 30px;
+border-radius: 10px;
+
+
+
+
+}
+#t4
+
+{
+
+border: 2px blue ridge;
+width: 300px ;
+margin-left: 30px;
+height: 30px;
+border-radius: 10px;
+
+
+
+}
+p
+{
+
+font-size: 20px;
+color: white;
+
+margin-left: 20px;
+}
+button
+
+{
+  
+    background-color: rgb(235, 171, 234);
+    border-radius: 10px;
+    height: 50px;
+    width: 400px;
+    height: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+
+
+
+}
+body
+{
+ background-image: url(bg3.jpg);
+ background-size: 100%;
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="main">
+<div class="div1">
+<h2>Salary Slip</h2><hr>
+
+<h6>Name:     &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="t10"></h6>
+<h6>Id:       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="t11" ></h6>
+<hr>
+<h6>Basic:      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"  id="t5"></h6>
+<h6>HRA:      &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"    id="t6"></h6>
+<h6>CCA:       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"  id="t7" ></h6>
+<h6>DA:       &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"    id="t8"></h6>
+<h6>PF:    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"   id="t9"></h6>
+<hr>
+    <h6>Leaves:&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"   id="t14"></h6>
+    <h6>Amount: &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="t15"></h6>
+    <hr>
+    <h6>Gross:  &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="t12"></h6>
+    <h6> Net Sal:       &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"  id="t13"></h6>
+</div>
+<div class="div2">
+<center><h2>Enter details here</h2></center>
+<br><br><br><br>    
+<p>Enter name</p>
+<input type="text" id="t1" >
+<p>Enter Id</p>
+<input type="text" id="t2">
+<p>Basic salary </p><input type="text" id="t3">
+<p>Number of Leaves </p><input type="text" id="t4" >
+<br><br><br><br><br><br>
+<center><button onclick="calSal()">Generate</button></center>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
